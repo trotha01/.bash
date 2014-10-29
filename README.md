@@ -3,7 +3,7 @@
 git clone this repo into your home directory
 ```
 $ cd ~/
-$ git clone https://github.com/trotha01/.bash
+$ git git@github.com:trotha01/.bash.git
 ```
 
 In  ~/.bashrc or ~/.bash_profile, insert the line:
