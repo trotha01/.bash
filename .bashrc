@@ -9,13 +9,13 @@ source ~/.bash/.bash_aliases
 source ~/.bash/.bash_functions
 
 # Source color functions
-source ~/colors/color.sh
+[ -d ~/colors ] && source ~/colors/color.sh
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # git prompt
-source ~/bash-git-prompt/gitprompt.sh
+[ -d ~/bash-git-prompt ] && source ~/bash-git-prompt/gitprompt.sh
 
 # Source for ruby
 if [ -f ~/.rvm/scripts/rvm ]; then
@@ -27,6 +27,8 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+# Fuzzy finder
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 ######################
 # Path Additions
@@ -35,7 +37,7 @@ fi
 export PATH=~/bin:$PATH
 
 ######################
-# Other
+# Settings
 ######################
 # vim mode
 set -o vi
