@@ -31,16 +31,8 @@ fi
 ######################
 # Path Additions
 ######################
-# add go to path
-export GOPATH=~/go
-export PATH="$PATH:$GOPATH/bin"
-
 # Add local binaries to path
 export PATH=~/bin:$PATH
-
- # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
 
 ######################
 # Other
