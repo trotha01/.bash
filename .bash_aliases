@@ -21,7 +21,6 @@ alias cp='cp -r'
 
 # Navigation
 alias ll='ls -lh'
-alias hlgn='ssh trotha01@homework.cs.tufts.edu'
 
 # Redis
 alias redis-server='redis-server /usr/local/etc/redis.conf'

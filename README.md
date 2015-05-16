@@ -2,8 +2,8 @@
 
 git clone this repo into your home directory
 ```
-$ cd ~/
-$ git git@github.com:trotha01/.bash.git
+cd ~/
+git clone git@github.com:trotha01/.bash.git
 ```
 
 In  ~/.bashrc or ~/.bash_profile, insert the line:
