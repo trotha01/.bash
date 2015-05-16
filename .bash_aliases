@@ -35,6 +35,8 @@ alias vr='vagrant reload'
 alias vs='vagrant status'
 alias vssh='vagrant ssh'
 alias vup='vagrant up'
+alias valias='alias|grep vagrant|grep -v grep'
+alias valiases='alias|grep vagrant|grep -v grep'
 
 # power
 alias sd='sudo shutdown -h now' # Shutdown

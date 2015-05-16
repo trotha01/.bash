@@ -33,6 +33,8 @@ function title {
     echo -ne "\033]0;"$*"\007"
 }
 
+# `up` with no args is the same as cd ../
+# `up 3` is the same as cd ../../../
 function up( )
 {
     DEFAULT_LIMIT=1
@@ -40,9 +42,9 @@ function up( )
     P=$PWD
     for ((i=1; i <= LIMIT; i++))
     do
-        P=$P/..
+        B=$B/..
     done
-    cd $P
+    cd $P$B
     export MPWD=$P
 }
 
