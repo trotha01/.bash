@@ -8,6 +8,15 @@ function repeat {
     done
 }
 
+# Force it until it works
+function force() {
+  i=1
+  until $@; do
+    i=`expr $i + 1`
+    echo "\n\n ===== Attempt #$i ===== \n\n"
+  done
+}
+
 # Line break
 function lb {
     repeat 10 echo
