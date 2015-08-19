@@ -11,8 +11,8 @@ alias vi='vim -p' # open vim in tabs
 alias vim='vim -p'
 
 # Document access
-alias notes='vim ~/Documents/notes.txt'
-alias bashrc='vim ~/.bash/.bashrc'
+alias notes='nvim ~/Documents/notes.txt'
+alias bashrc='nvim ~/.bash/.bashrc'
 alias host='sudo vim /etc/hosts'
 alias hosts='sudo vim /etc/hosts'
 
@@ -42,7 +42,7 @@ alias sd='sudo shutdown -h now' # Shutdown
 alias po='sudo shutdown -h now' # Poweroff (same as shutdown)
 
 # Searching
-alias grep='grep -n --color=always'
+alias grep='grep --color=always'
 
 # git
 alias gitconf='vim ~/.gitconfig'
@@ -58,4 +58,7 @@ alias keys='key-mon'
 alias wn='lua ~/src/wn.lua'
 
 # open notes file
-alias note='vi ~/notes'
+alias note='nvim ~/notes/public'
+
+# docker-compose
+alias dc='docker-compose'
