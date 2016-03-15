@@ -9,7 +9,7 @@ source ~/.bash/.bash_aliases
 source ~/.bash/.bash_functions
 
 # Source color functions
-# source ~/colors/color.sh
+[ -d ~/colors ] && source ~/colors/color.sh
 
 # autojump
 # BREW_VERSION=`brew --version`
@@ -18,7 +18,7 @@ if brew --version; then echo 'here'; fi
 # [[ `brew --version` != "" ]] && [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # git prompt
-# source ~/bash-git-prompt/gitprompt.sh
+[ -d ~/bash-git-prompt ] && source ~/bash-git-prompt/gitprompt.sh
 
 # Source for ruby
 if [ -f ~/.rvm/scripts/rvm ]; then
@@ -30,23 +30,17 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+# Fuzzy finder
+# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 ######################
 # Path Additions
 ######################
-# add go to path
-export GOPATH=~/go
-export PATH="$PATH:$GOPATH/bin"
-
 # Add local binaries to path
 export PATH=~/bin:$PATH
 
- # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
-
 ######################
-# Other
+# Settings
 ######################
 # vim mode
 set -o vi
