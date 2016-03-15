@@ -9,13 +9,16 @@ source ~/.bash/.bash_aliases
 source ~/.bash/.bash_functions
 
 # Source color functions
-source ~/colors/color.sh
+# source ~/colors/color.sh
 
 # autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# BREW_VERSION=`brew --version`
+# [[ `brew --version` != "" ]] && echo 'here'
+if brew --version; then echo 'here'; fi
+# [[ `brew --version` != "" ]] && [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # git prompt
-source ~/bash-git-prompt/gitprompt.sh
+# source ~/bash-git-prompt/gitprompt.sh
 
 # Source for ruby
 if [ -f ~/.rvm/scripts/rvm ]; then
@@ -71,4 +74,3 @@ set completion-ignore-case on
 shopt -s histappend
 ## Write previous line to disk ##
 # PROMPT_COMMAND='history -a'
-
