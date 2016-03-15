@@ -3,10 +3,10 @@
 # Sourcing other files
 ######################
 # source aliases
-source ~/.bash/.bash_aliases
+source ~/.bash/aliases
 
 # source functions
-source ~/.bash/.bash_functions
+source ~/.bash/functions
 
 # Source color functions
 [ -d ~/colors ] && source ~/colors/color.sh
